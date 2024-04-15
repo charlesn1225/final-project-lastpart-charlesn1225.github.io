@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #555;
+    --background-color: #fff;
+    --text-color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    background: var(--secondary-color);
+    color: var(--background-color);
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background: var(--secondary-color);
+    color: var(--background-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+button, input[type="submit"] {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+a, a:visited {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus, button:focus, input:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjusts the space between images */
+    justify-content: center; /* Center align the images if you prefer */
+}
+
+.image-item img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Keeps the aspect ratio intact */
+    max-width: 300px; /* Increased from 200px to 300px for larger images */
+    margin: 0 auto; /* Centers the image in the container */
+}
+
+.image-item img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Keeps the aspect ratio intact */
+    max-width: 300px; /* Sets a maximum width for each image */
+    margin: 0 auto; /* Centers the image in the container */
+}
+
+.image-item p {
+    margin-top: 15px; /* Adds space between the image and its description */
+}
+.image-disclaimer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em; /* Adjusts the font size to be slightly smaller */
+    color: #666; /* A lighter text color for the disclaimer */
+}

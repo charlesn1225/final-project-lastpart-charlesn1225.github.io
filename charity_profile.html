@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - Charity Profile: Christian Friends of New Americans</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz8xogSqSx19W6h_ZpTu6ztvtM91Z0jsU&callback=initMap&libraries=&v=weekly" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities List</a></li>
+                <li><a href="index.html#about_us">About Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="charity-info">
+            <h2>Christian Friends of New Americans</h2>
+            <p>We Are Helping Our Immigrant and Refugee Neighbors. CFNA provides services such as befriending, serving, and witnessing to new Americans in the St. Louis area, supporting their integration and fostering a welcoming community.</p>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="CFNA-Web-Logo-2022.png" alt="CFNA Logo with their Address">
+                    <p>CFNA Logo with their Address</p>
+                </div>
+                <div class="image-item">
+                    <img src="428395584_798092349031029_2365023161207650292_n.jpg" alt="Lutheran South Kairos and CFNA Students">
+                    <p>Lutheran South Kairos and CFNA Students</p>
+                </div>
+                <div class="image-item">
+                    <img src="CFNAdriveprogram.jpg" alt="Volunteer needed for Helping Refugee learn how to drive">
+                    <p>Volunteer needed for Helping Refugee learn how to drive</p>
+                </div>
+            </div>
+            <button onclick="document.getElementById('volunteer-form').style.display='block'">Volunteer Now</button>
+            <button id="more-info-button">More Info</button>
+            <div id="more-info" style="display: none;">
+                <p>More detailed information about the charity...</p>
+            </div>
+        </section>
+        <!-- Embed Google Form -->
+        <div id="volunteer-form" style="display:none;">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbLoFDJwVRgg-VylKmPCYS47_3sL-oSz9ygVD20A3TmSR1TA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <!-- Map Container -->
+        <div id="map" style="height: 400px; width: 100%;"></div>
+    </main>
+    <footer>
+        <p>All images are used with permission. Rights to the images are held by their respective owners CFNA.</p>
+    </footer>
+    <div class="image-disclaimer">
+        <p>All images are used with permission. Rights to the images are held by their respective owners CFNA.</p>
+    </div>
+    <script src="charity_profile.js"></script>
+</body>
+</html>
